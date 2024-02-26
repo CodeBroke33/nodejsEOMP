@@ -66,6 +66,20 @@ class Products{
         })
     }
 
+    // Delete Product
+    deleteProduct(req, res) {
+        const qry = `
+        DELETE FROM Products
+        WHERE prodID = ${req.params.id};
+        `
+        db.query(qry, (err)=>{
+            if(err) throw err 
+            res.json({
+                status: res.statusCode, 
+                msg: "The product information has been deleted."
+            })
+        })
+    }
 
 }
 
