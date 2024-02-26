@@ -1,6 +1,8 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import { products } from '../model/index.js';
+// import { users } from '../model/index.js'
+
 
 const productRouter = express.Router();
 
