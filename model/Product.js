@@ -1,6 +1,5 @@
 import {connection as db} from "../config/index.js"
 
-
 class Products{
     // Mulitple Products
     fetchProducts(req, res){
