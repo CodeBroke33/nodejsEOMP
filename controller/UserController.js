@@ -4,10 +4,10 @@ import { users } from '../model/index.js'
 import { verifyAToken } 
 from "../middleware/AuthenticateUser.js"
 
+
 const userRouter = express.Router();
 
 // Fetch Users Plural
-
 userRouter.get('/', (req, res)=>{
     try{
         users.fetchUsers(req, res)
