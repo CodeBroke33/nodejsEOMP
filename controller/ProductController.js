@@ -54,6 +54,18 @@ productRouter.patch('/update/:id', bodyParser.json(), (req, res)=>{
     }
 })
 
+// Delete Product
+productRouter.delete('/delete/:id', (req, res)=>{
+    try{
+        products.deleteProduct(req, res)
+    }catch(e) {
+        res.json({
+            status: res.statusCode,
+            msg: "Failed to delete a product."
+        })
+    }
+})
+
 export {
     productRouter
 }
