@@ -84,6 +84,20 @@ class Users{
         })
 
     }
+    // Delete User
+    deleteUser(req, res) {
+        const qry = `
+        DELETE FROM Users
+        WHERE userID = ${req.params.id};
+        `
+        db.query(qry, (err)=>{
+            if(err) throw err 
+            res.json({
+                status: res.statusCode,
+                msg: "The user information has been removed."
+            })
+        })
+    }
     
 }
 
