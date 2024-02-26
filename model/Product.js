@@ -50,6 +50,22 @@ class Products{
         })
     }
 
+    // Update Product
+    updateProduct(req, res) {
+        const qry = `
+        UPDATE Products
+        SET ?
+        WHERE prodID = ${req.params.id};
+        `
+        db.query(qry, [req.body], (err)=>{
+            if(err) throw err
+            res.json({
+                status: res.statusCode, 
+                msg: "The product information has been updated."
+            })
+        })
+    }
+
 
 }
 
