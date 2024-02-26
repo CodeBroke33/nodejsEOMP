@@ -63,6 +63,27 @@ class Users{
             }
         })   
     }
+    // Update User
+    async updateUser(req, res) {
+        const data = req.body 
+        if(data?.userPwd){
+            data.userPwd = await hash(data?.userPwd, 8)
+        }
+            
+        const qry = `
+        UPDATE Users
+        SET ?
+        WHERE userID = ${req.params.id};
+        `
+        db.query(qry, [data], (err)=>{
+            if(err) throw err 
+            res.json({
+                status: res.statusCode,
+                msg: "The user information is updated."
+            })
+        })
+
+    }
     
 }
 
