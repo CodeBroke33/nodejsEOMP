@@ -1,11 +1,24 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    
+    <NavBar/>
+    <!-- <router-view/> -->
+    <FooterView/>
+    </div>
 </template>
 
+<script>
+import NavBar from './components/NavBar.vue'; 
+import FooterView from './components/FooterView.vue';
+
+export default {
+  components: {
+   FooterView, 
+   NavBar
+  }
+}
+ 
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -17,7 +30,8 @@
 
 nav {
   padding: 30px;
-}
+  border-bottom: white;
+} 
 
 nav a {
   font-weight: bold;
