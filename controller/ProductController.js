@@ -42,6 +42,18 @@ productRouter.post('/addProduct', bodyParser.json(), (req, res)=>{
     }
 })
 
+// Update Product
+productRouter.patch('/update/:id', bodyParser.json(), (req, res)=>{
+    try{
+        products.updateProduct(req, res)
+    }catch(e) {
+        res.json({
+            status: res.statusCode,
+            msg: "Failed to update a product."
+        })
+    }
+})
+
 export {
     productRouter
 }
