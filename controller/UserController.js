@@ -39,16 +39,29 @@ userRouter.post('/register', bodyParser.json(), (req, res)=>{
 })
 
 //  Update User
-
-userRouter.post('/register', bodyParser.json(), (req, res)=>{
+userRouter.patch('/update/:id', bodyParser.json(), 
+(req, res)=>{
     try{
-        users.createUser(req, res)
+        users.updateUser(req, res)
+    }catch(e) {
+        res.json({
+            status: res.statusCode, 
+            msg: "Failed to update a user"
+        })
+    }
+})
+
+// Delete User
+userRouter.delete('/delete/:id', (req, res)=>{
+    try{
+        users.deleteUser(req, res)
     }catch(e) {
         res.json({
             status: res.statusCode,
-            msg: 'Failed to add a new user.'
-        }) 
+            msg: "Failed to delete a user."
+        })
     }
+    
 })
 
 export{
