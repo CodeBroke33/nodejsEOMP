@@ -38,6 +38,19 @@ userRouter.post('/register', bodyParser.json(), (req, res)=>{
     }
 })
 
+//  Update User
+
+userRouter.post('/register', bodyParser.json(), (req, res)=>{
+    try{
+        users.createUser(req, res)
+    }catch(e) {
+        res.json({
+            status: res.statusCode,
+            msg: 'Failed to add a new user.'
+        }) 
+    }
+})
+
 export{
     userRouter, express
 }
