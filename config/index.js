@@ -14,8 +14,12 @@ try {
         multipleStatement: true,
         connectionLimit: 30,
     });
-} catch (error) {
+} 
+catch
+ (error) {
     console.error("Error creating database connection:", error);
 }
 
-export { connection };
+export {
+     connection
+     };
