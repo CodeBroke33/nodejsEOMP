@@ -13,6 +13,17 @@ userRouter.get('/', (req, res)=>{
         })
     }
 })
+// Fetch user
+userRouter.get('/:id', (req, res)=>{
+    try{
+        users.fetchUser(req, res)
+    }catch(e) {
+        res.json({
+            status: res.statusCode,
+            msg: 'Failed to retrieve a user'
+        })
+    }
+})
 
 export{
     userRouter, express
