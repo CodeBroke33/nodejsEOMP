@@ -33,6 +33,37 @@ class Users{
             })
         })
     }
+    // Create a User
+    async createUser(req, res) {
+        // Payload
+        let data = req.body
+        data.userPwd = await hash(data?.userPwd, 8)
+        let user = {
+            emailAdd: data.emailAdd,
+            userPwd: data.userPwd
+        }
+        const qry = `
+        INSERT INTO Users
+        SET ?;
+        `     
+        db.query(qry, [data], (err)=>{
+            if(err) {
+                res.json({
+                    status: res.statusCode,
+                    msg: 'This email address already exist'
+                })
+            }else {
+                // Create a token
+                let token = createToken(user)
+                res.json({
+                    status: res.statusCode,
+                    token,
+                    msg: 'You\'re registered'
+                })
+            }
+        })   
+    }
+    
 }
 
 export {
