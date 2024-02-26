@@ -30,6 +30,17 @@ productRouter.get('/:id', (req, res)=>{
     }
 })
 
+// Add product
+productRouter.post('/addProduct', bodyParser.json(), (req, res)=>{
+    try{
+        products.addProduct(req, res)
+    }catch(e) {
+        res.json({
+            status: res.statusCode,
+            msg: 'Failed to add a new product.'
+        })
+    }
+})
 
 export {
     productRouter
