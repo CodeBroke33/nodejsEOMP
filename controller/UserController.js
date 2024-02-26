@@ -1,5 +1,4 @@
-import express from 'express';
-import bodyParser from 'body-parser';
+import express from "express";
 
 const userRouter = express.Router();
 
@@ -17,4 +16,4 @@ userRouter.get('/', (req, res)=>{
 
 export{
     userRouter, express
-}   
+}
