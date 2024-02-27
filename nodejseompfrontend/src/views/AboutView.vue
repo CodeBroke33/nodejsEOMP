@@ -21,7 +21,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h1>Carl Micheal James</h1>
+                        <h1>Carl Micheal James</h1> 
                         <p>
                             Carl Michael James epitomizes an exceptional individual, showcasing a blend of resolute qualities and versatile skills. He exudes determination and confidence, demonstrating autonomy and initiative in his endeavors. With unwavering reliability, Carl Michael consistently fulfills his responsibilities, making decisive contributions to problem-solving and progress.<br><br>His insightful perspectives and entrepreneurial mindset foster innovation and strategic thinking, while his role as CFO underscores his financial acumen and leadership prowess. Carl Michael's dynamic persona enriches every project, making collaboration with him both enriching and rewarding.</p>
                     </div>
