@@ -8,7 +8,7 @@ import cors from 'cors'
 // config()
 
 const app = express()
-const port = +process.env.PORT || 4000
+const port = +process.env.PORT || 5500
 // Middleware
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
