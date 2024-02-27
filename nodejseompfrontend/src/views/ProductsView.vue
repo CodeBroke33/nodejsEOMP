@@ -1,6 +1,6 @@
 <template>
-  <div class="page-wrap">
-    <h1>Products</h1>
+  <div class="products bg-black">
+    <h1 class="text-white">Products</h1>
 
     <div class="grid-wrap">
       <ProductList :products="products" />
@@ -26,6 +26,12 @@ export default {
 </script>
   
 <style scooped>
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+
+h1 {
+  font-family: 'Jacques Francois Shadow', cursive;
+  font-size: 5rem;
+}
 
   .product-item img {
     height: 300px;

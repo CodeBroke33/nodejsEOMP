@@ -7,19 +7,23 @@
     </div>
 </template>
 
+
 <script>
 import NavBar from './components/NavBar.vue'; 
 import FooterView from './components/FooterView.vue';
 
 export default {
   components: {
-   FooterView, 
-   NavBar
+    FooterView, 
+    NavBar
   }
 }
  
 </script>
-<style>
+
+
+
+<style >
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
