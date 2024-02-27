@@ -1,4 +1,6 @@
 <template>
+
+  <!-- Tomorrows work -->
     <div class="container-fluid">  
       <h1 class="text-center">Admin</h1>
       <!-- User products -->
