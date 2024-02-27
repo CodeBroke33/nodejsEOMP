@@ -29,7 +29,7 @@ const routes = [
     component: () => import('../views/ContactView.vue'),
   },
   {
-    path: '/product/:productId',
+    path: '/products/:productId',
     name: 'ProductView',
     component: () => import( '../views/ProductDetailPage.vue')
   },

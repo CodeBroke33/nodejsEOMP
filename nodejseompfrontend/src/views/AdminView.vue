@@ -1,14 +1,15 @@
 <template>
-    <div class="container-fluid bg-dark">  
+
+  <!-- Tomorrows work -->
+    <div class="container-fluid">  
       <h1 class="text-center">Admin</h1>
-      <div class="row">
-        <div class="col"><button class="btn btn-primary">Sort Users</button></div>
-        <div class="col"><button class="btn btn-success">Add New Product</button></div>
-      </div>
-  
       <!-- User products -->
       <div class="col">
-        <h2>User Products</h2>
+        <h2>Users</h2>
+        <div class="row">
+        <div class="col"><button class="btn btn-primary">Sort Users</button></div>
+        <div class="col"><button class="btn btn-success">Add New User</button></div>
+      </div>
         <table class="table">
           <thead>
             <tr>
@@ -44,7 +45,11 @@
   
       <!-- Table Products -->
       <div class="col">
-        <h2>Table Products</h2>
+        <h2> Products</h2>
+        <div class="row">
+        <div class="col"><button class="btn btn-primary">Sort Product</button></div>
+        <div class="col"><button class="btn btn-success">Add New Products</button></div>
+      </div>
         <table class="table">
           <thead>
             <tr>

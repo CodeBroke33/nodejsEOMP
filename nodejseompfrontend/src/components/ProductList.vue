@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="grid-wrap">
-            <div class="product-item" v-for="product in products" :key="product.id">
+            <div class="product-item" v-for="product in products" :key="product.prodID">
                 <img :src="product.imageName" />
                 <h3 class ="product-info">{{ product.name }}</h3>
                 <p class="product-info">{{ product.title }}</p>
