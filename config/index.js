@@ -10,7 +10,7 @@ try {
         host: process.env.DB_HOST,
         database: process.env.DB_Name,
         user: process.env.DB_UserName,
-        password: process.env.DB_UserPass,
+        password: process.env.DB_userPass,
         multipleStatement: true,
         connectionLimit: 30,
     });
