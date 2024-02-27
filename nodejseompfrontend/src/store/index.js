@@ -5,7 +5,7 @@ import { useCookies } from 'vue3-cookies'
 const {cookies} = useCookies()
 import router from '@/router'
 import AuthenticateUser from '../Service/AuthenticateUser.js'
-const onlyWater = 'https://nodejseomp-aiuk.onrender.com/users'
+const onlyWater = 'https://nodejseomp-aiuk.onrender.com/'
 
 export default createStore({
   state: {
