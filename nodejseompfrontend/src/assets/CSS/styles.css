@@ -6,9 +6,11 @@ padding: 0;
 box-sizing: border-box;
 }
 
+
+
 /* logo */
 
-img[alt='logo']{
+/* img[alt='logo']{
     width: 5rem;
     aspect-ratio: 1/1;
 }
@@ -32,4 +34,4 @@ img[alt='logo']{
   
   nav a.router-link-exact-active {
     color: #42b983;
-  }
+  } */
