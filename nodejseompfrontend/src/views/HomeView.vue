@@ -41,11 +41,17 @@ h1 {
 }
 
 .bg-image {
-  background-image: url('https://i.ibb.co/MPfYxHn/WATER-H2-O-2.jpg');
+  background-image: url('https://i.ibb.co/MPfYxHn/WATER-H2-O-2.jpg'), linear-gradient(to top, rgba(0,0,0,0.8), rgba(255,255,255,0));
+  background-size: cover;
   /* You can also use other background properties such as size, position, repeat, etc. */
   background-size: cover;
   background-position: center;
   height: auto;
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(255,255,255,0));
+  /* This will create a linear gradient that goes from black (0,0,0) with 80% opacity at the bottom to transparent white (255,255,255) at the top */
+
 }
 
 .homepage {

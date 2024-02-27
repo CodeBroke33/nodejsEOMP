@@ -1,46 +1,37 @@
 <template>
-  <div class="aboutpage bg-black">
+  <main class="bg-black">
+    <div class="aboutpage">
     <h1 id="header" class="fs-1 mb-4">Meet The Team</h1>
-    <p class="mb-0">
-      A fantastic team dynamic is like a symphony, where each instrument plays a crucial role in creating harmonious melodies. In such a team, individuals seamlessly complement one another, leveraging their unique strengths and expertise to achieve common goals. Communication flows effortlessly, with open dialogue fostering collaboration and innovation. Trust forms the foundation, allowing team members to rely on each other's capabilities and support one another through challenges.
-
-      Creativity thrives within this dynamic, as diverse perspectives fuel brainstorming sessions and problem-solving endeavors. Each team member feels valued and empowered, contributing their best efforts towards shared objectives. Accountability is ingrained in the team culture, ensuring that commitments are honored and progress is consistently made.
-
-      In this environment, successes are celebrated collectively, fostering a sense of camaraderie and motivation to continually strive for excellence. Challenges are viewed as opportunities for growth, and setbacks are met with resilience and determination. Ultimately, a fantastic team dynamic isn't just about achieving goals—it's about the journey of collaboration, growth, and shared accomplishments that bonds individuals together, creating a powerhouse of collective achievement.
-    </p>
-  </div>
-
-  <div class="container">
-  <div class="row">
-    <div class="col-md-6 mb-4">
-      <div class="border rounded p-3">
-        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Placeholder Image">
-      </div>
-    </div>
-    <div class="col-md-6 mb-4">
-      <div class="border rounded p-3">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac magna eget turpis vestibulum consectetur. Nulla facilisi. Proin vitae nisl justo. Aenean varius ligula eget massa eleifend, eget tincidunt libero suscipit. Nam convallis, eros non tristique convallis, arcu tortor mollis libero, nec fringilla ex purus vel urna. Cras ut malesuada dui.
-        </p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="col-md-6 mb-4 order-md-2">
-      <div class="border rounded p-3">
-        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Placeholder Image">
-      </div>
-    </div>
-    <div class="col-md-6 mb-4 order-md-1">
-      <div class="border rounded p-3">
-        <p class="">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac magna eget turpis vestibulum consectetur. Nulla facilisi. Proin vitae nisl justo. Aenean varius ligula eget massa eleifend, eget tincidunt libero suscipit. Nam convallis, eros non tristique convallis, arcu tortor mollis libero, nec fringilla ex purus vel urna. Cras ut malesuada dui.
-        </p>
-      </div>
-    </div>
-  </div>
 </div>
+
+<div class="about">
+  <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Razien Mackenzie</h1>
+                        <p>
+                            Razien Mackenzie is defined by his remarkable determination and ambition. His relentless pursuit of goals is fueled by unwavering dedication, pushing him forward with enthusiasm. Razien's infectious optimism uplifts those around him, instilling a resilient mindset that tackles challenges with boundless energy.<br><br>With a reputation for reliability and independence, Razien, as the Chief Information Officer (CIO) of the company, takes charge confidently, navigating through obstacles with ease. His leadership qualities extend beyond mere direction, as he leads by example, inspiring others to rise to their full potential. In any environment, Razien's presence is not only notable but also transformative, leaving a lasting impact on those he encounters.</p>
+                    </div>
+                    <div class="col">
+                        <img src="https://i.ibb.co/0ZB2CJ2/default-avatar-profile-icon-vector.jpg" class="w-20 h-25" alt="Profile">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Carl Micheal James</h1>
+                        <p>
+                            Carl Michael James epitomizes an exceptional individual, showcasing a blend of resolute qualities and versatile skills. He exudes determination and confidence, demonstrating autonomy and initiative in his endeavors. With unwavering reliability, Carl Michael consistently fulfills his responsibilities, making decisive contributions to problem-solving and progress.<br><br>His insightful perspectives and entrepreneurial mindset foster innovation and strategic thinking, while his role as CFO underscores his financial acumen and leadership prowess. Carl Michael's dynamic persona enriches every project, making collaboration with him both enriching and rewarding.</p>
+                    </div>
+                    <div class="col">
+                        <img src="https://i.ibb.co/0ZB2CJ2/default-avatar-profile-icon-vector.jpg" class="w-20 h-25"  alt="Profile">
+                    </div>
+                </div>
+            </div>
+</div>
+  </main>
 
 </template>
 
@@ -60,7 +51,7 @@
  ::after,
  ::before{
   margin: 0;
-  padding: 5%;
+  padding: 1.5%;
   box-sizing: border-box;
  }
 
@@ -72,13 +63,23 @@
 
 #header {
   font-family: 'Jacques Francois Shadow', cursive;
-  font-size: 6rem !important;
+  font-size: 7rem !important;
   color: white;
-  padding: 6%;
+  padding: 17%;
+}
+
+ h1 {
+  font-family: 'Jacques Francois Shadow', cursive;
+  font-size: 2rem !important;
+  color: white;
+  padding: 1%;
 }
 
 p {
-  position: absolute;
-  bottom: 15em;
+  font-size: 0.8em;
+}
+
+.about {
+  margin-left: 5%
 }
 </style>

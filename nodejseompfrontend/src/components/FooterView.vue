@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid bg-black fixed-bottom">
+    <div class="container-fluid bg-black">
         <div class="row">
             <p class="lead">
                 <b class="bold-text text-white">- Code by REZDEV&copy;</b>
