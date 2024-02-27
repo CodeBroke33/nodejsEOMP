@@ -1,22 +1,34 @@
 <template>
-  <div v-if="product">
-      <div class="img-wrap 100vh">
-        <img :src="product.imageName" />
+  <div class="row">
+    <div class="col">
+      <div v-if="product" class="row">
+        <div class="col-md-6">
+          <div class="img-wrap 100vh">
+            <img :src="product.imageName" />
+          </div>
+          <div class="product-details">
+            <h1>{{ product.name }}</h1>
+          </div>
+        </div>
+        <div class="col-md-6 mt-5">
+          <h3 class="text-center mb-5">{{ product.title }}</h3>
+          <p class="text-center">{{ product.description }}</p>
+          <h3 class="price">{{ product.price }}</h3>
+          <div class="container mt-3">
+            <button class="btn btn-primary" @click="goback"><i class="bi bi-arrow-left"></i>Go back</button>
+          </div>
+        </div>
       </div>
-      <div class="product-details">
-        <h1>{{ product.name }}</h1>
-        <h3 class="price">{{ product.price }}</h3>
-        <button class="add-to-cart">Add to cart</button>
+      <div v-else>
+        <NotFoundProductPage />
       </div>
-  </div>
-  <div v-else>
-    <NotFoundPage />
+    </div>
   </div>
 </template>
 
 <script>
 import { products } from '../temp-data';
-import NotFoundPage from './NotFoundPage.vue';
+import NotFoundProductPage from './NotFoundPage.vue';
 
 export default {
   name: "ProductDetailPage",
@@ -25,15 +37,20 @@ export default {
       product: products.find(product => product.id === this.$route.params.productId),
     }
   },
+  methods: {
+    goback() {
+      this.$router.push({ name: 'products' });
+    }
+  },
   components: {
-    NotFoundPage
+    NotFoundProductPage
   },
 }
 </script>
 
 <style>
-  /* .img-wrap {
-    margin-top: 32px;
+  .img-wrap {
+    margin-top: 2rem;
     text-align: center;
   }
   
@@ -42,8 +59,7 @@ export default {
   }
 
   .product-details {
-    padding: 16px;
+    padding: 1rem;
     position: relative;
-  } */
-  
+  } 
 </style>
