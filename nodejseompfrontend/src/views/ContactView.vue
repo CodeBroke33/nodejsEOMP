@@ -1,11 +1,11 @@
 <template>
-  <section class="vh-100 bg-dark">
-    <div class="main bg-dark container mt-5">
-      <div class="row bg-dark">
+  <section class="vh-100 bg-black">
+    <div class="main bg-black container mt-5">
+      <div class="row bg-black">
 
         <!-- First Column -->
-        <div class="col-md-6 bg-dark text-white">
-          <div class="card h-100">
+        <div class="contact col">
+          <div class="h-100">
             <div class="card-body">
               <h1>Contact Us</h1>
               <p>Contact Number: <strong>068 373 5646</strong></p>
@@ -22,8 +22,8 @@
           </div>
         </div>
         <!-- Second Column -->
-        <div class="col-md-6 bg-dark text-white">
-          <div class="card h-100">
+        <div class="col-md-6 bg-black text-white">
+          <div class="h-100">
             <div class="card-body">
               <h5 class="card-title">Contact Form</h5>
 
@@ -66,10 +66,5 @@ export default {
 
 <style scoped>
 
-.bg-dark {
-  background-color: #000 !important;
-}
-.text-white {
-  color: #fff !important;
-}
+
 </style>

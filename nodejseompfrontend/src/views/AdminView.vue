@@ -10,8 +10,7 @@
         <div class="col"><button class="subadmin fs-5 btn text-black bg-light">Sort Users</button></div>
         <div class="col"><button class="subadmin fs-5 btn text-black bg-light">Add New User</button></div>
       </div>
-       <div class="table">
-        <table class="table">
+      <table class="table table-black table-striped-columns">
           <thead class="bg-black">
             <tr>
               <th>User ID</th>
@@ -42,7 +41,6 @@
             </tr>
           </tbody>
         </table>
-       </div>
       </div>
   
       <!-- Table Products -->
@@ -52,8 +50,8 @@
         <div class="col"><button class="subadmin fs-5 btn text-black bg-light">Sort Product</button></div>
         <div class="col"><button class="subadmin fs-5 btn text-black bg-light">Add New Products ...</button></div>
       </div>
-        <table class="table">
-          <thead>
+      <table class="table table-black table-striped-columns">
+           <thead>
             <tr>
               <th>BRAND</th>
               <th>SPECIFICATIONS</th>
@@ -84,7 +82,7 @@
               </td>
             </tr>
           </tbody>
-        </table>
+      </table>
       </div>
     </div>
   </template>
@@ -121,7 +119,9 @@
   <style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
 
-
+.adminpage {
+  overflow-x: hidden;
+}
   
   .product-item img {
     height: 100px;
