@@ -52,17 +52,17 @@
           <tr>
             <th>Product ID</th>
             <th>Product Name</th>
-            <th>Product Quantity</th>
+            <th>Product Category</th>
             <th>Product Amount</th>
             <th>Action</th>
           </tr>
         </thead>
         <tbody v-if="products">
           <tr v-for="product in products" :key="product.prodID">
-            <td>{{ product.prodID }}</td>
+            <td><img :src="product.prodUrl" style="height: 100px;" /></td> 
             <td>{{ product.prodName }}</td>
-            <td>{{ product.prodQuantity }}</td>
-            <td>R {{ product.prodAmount }}</td>
+            <td>{{ product.Category }}</td>
+            <td> R {{ product.amount }}</td>
             <td>
               <div class="row">
                 <button class="btn btn-primary w-50">Edit</button>
