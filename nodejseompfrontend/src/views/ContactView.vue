@@ -28,7 +28,7 @@
               <h5 class="card-title">Contact Form</h5>
 
               <!-- Contact Form -->
-              <form method="post">
+              <form method="POST" action="https://formspree.io/f/mvoerbey">
                 <!-- Name Input -->
                 <div class="mb-3">
                   <label for="name" class="form-label">Name</label>

@@ -1,17 +1,18 @@
 <template>
 
   <!-- Tomorrows work -->
-    <div class="container-fluid">  
-      <h1 class="text-center">Admin</h1>
+    <div class="adminpage bg-black">  
+      <h1 class="admin text-white">Admin</h1>
       <!-- User products -->
       <div class="col">
-        <h2>Users</h2>
+        <h2 class="admin fs-1 text-white">Users</h2>
         <div class="row">
-        <div class="col"><button class="btn btn-primary">Sort Users</button></div>
-        <div class="col"><button class="btn btn-success">Add New User</button></div>
+        <div class="col"><button class="subadmin fs-5 btn text-black bg-light">Sort Users</button></div>
+        <div class="col"><button class="subadmin fs-5 btn text-black bg-light">Add New User</button></div>
       </div>
+       <div class="table">
         <table class="table">
-          <thead>
+          <thead class="bg-black">
             <tr>
               <th>User ID</th>
               <th>First name</th>
@@ -29,26 +30,27 @@
               <td>{{ user.firstName }}</td>
               <td>{{ user.lastName }}</td>
               <td>{{ user.userAge }}</td>
-              <td>{{ user.Gender }}</td>
+              <td>{{ user.gender }}</td>
               <td>{{ user.emailAdd }}</td>
               <td>{{ user.userRole }}</td>
               <td>
                 <div class="row">
-                  <button class="btn btn-primary">Edit</button>
-                  <button class="btn btn-danger">Delete</button>
+                  <button class="btn w-50 btn-primary">Edit</button>
+                  <button class="btn w-50 btn-danger">Delete</button>
                 </div>
               </td>
             </tr>
           </tbody>
         </table>
+       </div>
       </div>
   
       <!-- Table Products -->
       <div class="col">
-        <h2> Products</h2>
+        <h2 class="admin fs-1 text-white"> Products</h2>
         <div class="row">
-        <div class="col"><button class="btn btn-primary">Sort Product</button></div>
-        <div class="col"><button class="btn btn-success">Add New Products</button></div>
+        <div class="col"><button class="subadmin fs-5 btn text-black bg-light">Sort Product</button></div>
+        <div class="col"><button class="subadmin fs-5 btn text-black bg-light">Add New Products ...</button></div>
       </div>
         <table class="table">
           <thead>
@@ -60,7 +62,7 @@
               <th>ACTION</th>
             </tr>
           </thead>
-          <tbody v-if="products">   
+          <tbody class="" v-if="products">   
             <tr v-for="product in products" :key="product.id">
               <td class="product-image"><img :src="product.imageName" /></td>
               <td>{{ product.name }}</td>
@@ -76,8 +78,8 @@
               <td>{{ product.price }}</td>
               <td>
                 <div class="row">
-                  <button class="btn btn-primary">Edit</button>
-                  <button class="btn btn-danger">Delete</button>
+                  <button class="btn w-50 btn-primary">Edit</button>
+                  <button class="btn w-50 btn-danger">Delete</button>
                 </div>
               </td>
             </tr>
@@ -117,11 +119,27 @@
   
   
   <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+
+
+  
   .product-item img {
     height: 100px;
     width: 100px;
   }
   
+  
+  .admin {
+    font-family: 'Jacques Francois Shadow', cursive;
+    font-size: 5rem;
+  }
+
+  .subadmin {
+    font-family: 'Jacques Francois Shadow', cursive;
+    font-size: 5rem;
+    border-radius: 20px;
+
+  }
   .product-item button {
     width: 100%;
   }
