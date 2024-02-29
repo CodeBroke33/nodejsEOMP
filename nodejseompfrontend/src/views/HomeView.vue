@@ -1,11 +1,8 @@
 <template>
   <div class="homepage bg-black bg-image">
     <h1 class="home text-black margin-top">WELCOME<br>TO<br></h1>
-    <div class="img-wrapper" @click="createRipple">
+    <div class="img-wrapper">
       <img class="img-fluid rounded-circle" type="image" src="https://i.ibb.co/0M1KHF7/2-removebg-preview.png" alt="logo">
-      <transition-group name="ripple">
-        <span v-for="(ripple, index) in ripples" :key="index" class="ripple"></span>
-      </transition-group>
     </div>
   </div>
 </template>
@@ -13,21 +10,6 @@
 <script>
 export default {
   name: 'HomeView',
-  data() {
-    return {
-      ripples: [],
-    };
-  },
-  methods: {
-    createRipple(event) {
-      const rect = event.target.getBoundingClientRect();
-      const size = Math.max(rect.width, rect.height);
-      const x = event.clientX - rect.left - size / 2;
-      const y = event.clientY - rect.top - size / 2;
-
-      this.ripples.push({ x, y });
-    },
-  },
 };
 </script>
 
@@ -66,24 +48,6 @@ h1 {
 @media (max-width: 768px) {
   .homepage h1 {
     font-size: 3rem;
-  }
-}
-
-.ripple {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  transform: scale(0);
-}
-
-.ripple-enter-active {
-  animation: rippleEffect 0.6s linear;
-}
-
-@keyframes rippleEffect {
-  to {
-    transform: scale(4);
-    opacity: 0;
   }
 }
 </style>
