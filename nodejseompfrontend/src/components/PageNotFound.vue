@@ -1,14 +1,14 @@
 <template>
-    <section class="page_404">
+    <section class="page_404 bg-black">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 ">
                     <div class="col-sm-10 col-sm-offset-1  text-center">
                         <div class="four_zero_four_bg">
-                            <h1 class="text-center ">404</h1>
+                            <h1 class="text-center text-white">404</h1>
                         </div>
                         <div class="contant_box_404">
-                            <h3 class="h2">
+                            <h3 class="h2 text-white">
                                 Look like you're lost
                             </h3>
                             <p>the page you are looking for not avaible!</p>
@@ -58,7 +58,7 @@ export default {
 .link_404 {
     color: #fff !important;
     padding: 10px 20px;
-    background: #39ac31;
+    background: #65cbed;
     margin: 20px 0;
     display: inline-block;
 }

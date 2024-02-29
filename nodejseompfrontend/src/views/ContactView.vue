@@ -1,31 +1,31 @@
 <template>
   <section class="vh-100 bg-black">
-    <div class="main bg-black container mt-5">
+    <div class="main bg-black mt-5">
       <div class="row bg-black">
 
         <!-- First Column -->
-        <div class="contact col">
+        <div class="contact col my-5">
           <div class="h-100">
             <div class="card-body">
-              <h1>Contact Us</h1>
-              <p>Contact Number: <strong>068 373 5646</strong></p>
-              <p>Email Address: <strong><u>ONLYWATER@GMAIL.COM</u></strong></p>
-              <p>FIND US ON VARIOUS PLATFORMS </p>         
+              <h1 class="heading text-white fs-1">Contact Us</h1>
+              <p class="text-white my-5">Contact Number: <strong class="text-white">068 373 5646</strong></p>
+              <p class="text-white my-5">Email Address: <strong class="text-white"><u>ONLYWATER@GMAIL.COM</u></strong></p>
+              <p class="text-white my-5">FIND US ON VARIOUS PLATFORMS </p>         
               <!-- Social media Icons -->
               <div class="social-icons">
-                <a href="https://twitter.com" target="_blank" class="btn btn-primary"><i class="bi bi-twitter"></i></a>
-                <a href="https://slack.com" target="_blank" class="btn btn-primary"><i class="bi bi-slack"></i></a>
-                <a href="https://facebook.com" target="_blank" class="btn btn-primary"><i class="bi bi-facebook"></i></a>
-                <a href="https://github.com" target="_blank" class="btn btn-primary"><i class="bi bi-github"></i></a>
+                <a href="https://twitter.com" target="_blank" class="btn btn-info "><i class="bi bi-twitter"></i></a>
+                <a href="https://slack.com" target="_blank" class="btn btn-info"><i class="bi bi-slack"></i></a>
+                <a href="https://facebook.com" target="_blank" class="btn btn-info"><i class="bi bi-facebook"></i></a>
+                <a href="https://github.com" target="_blank" class="btn btn-info"><i class="bi bi-github"></i></a>
               </div>
-            </div>
+            </div> 
           </div>
         </div>
         <!-- Second Column -->
-        <div class="col-md-6 bg-black text-white">
+        <div class="col-md-6 bg-black text-white my-5 mx-4">
           <div class="h-100">
             <div class="card-body">
-              <h5 class="card-title">Contact Form</h5>
+              <h5 class="card-title"></h5>
 
               <!-- Contact Form -->
               <form method="POST" action="https://formspree.io/f/mvoerbey">
@@ -36,7 +36,7 @@
                 </div>
 
                 <!-- Email Input -->
-                <div class="mb-3">
+                <div class="mb-3"> 
                   <label for="email" class="form-label">Email</label>
                   <input type="email" class="form-control" id="email" name="email" required>
                 </div>
@@ -48,7 +48,7 @@
                 </div>
 
                 <!-- Send Button -->
-                <button type="submit" class="btn btn-primary">Send</button>
+                <button type="submit" class="btn btn-info">Send</button>
               </form>
 
             </div>
@@ -65,6 +65,31 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
 
+ *,
+::after,
+::before{
+  overflow-x: hidden;
+} 
 
+h1 {
+  font-family: 'Jacques Francois Shadow', cursive;
+  font-size: 5rem;
+}
+
+.heading{
+  font-size: 7rem !important ;
+  overflow: hidden;
+}
+
+.form-label {
+  font-family: 'Jacques Francois Shadow', cursive;
+  font-size: 1em;
+}
+
+.btn {
+  border-radius: 50%;
+  justify-content: space-between ;
+}
 </style>

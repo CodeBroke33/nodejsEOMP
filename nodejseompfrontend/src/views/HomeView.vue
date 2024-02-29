@@ -1,10 +1,12 @@
 <template>
-  <div class="homepage bg-black bg-image" @click="createRipple">
+  <div class="homepage bg-black bg-image">
     <h1 class="home text-black margin-top">WELCOME<br>TO<br></h1>
-    <img class="img-fluid rounded-circle" type="image" src="https://i.ibb.co/0M1KHF7/2-removebg-preview.png" alt="logo">
-    <transition-group name="ripple">
-      <span v-for="(ripple, index) in ripples" :key="index" class="ripple"></span>
-    </transition-group>
+    <div class="img-wrapper" @click="createRipple">
+      <img class="img-fluid rounded-circle" type="image" src="https://i.ibb.co/0M1KHF7/2-removebg-preview.png" alt="logo">
+      <transition-group name="ripple">
+        <span v-for="(ripple, index) in ripples" :key="index" class="ripple"></span>
+      </transition-group>
+    </div>
   </div>
 </template>
 
@@ -38,6 +40,11 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.img-wrapper {
+  position: relative;
+  display: inline-block;
 }
 
 h1 {

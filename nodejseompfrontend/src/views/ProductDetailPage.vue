@@ -20,7 +20,7 @@
         </div>
       </div>
       <div v-else>
-        <NotFoundProductPage />
+        <NotFoundProductPage /> 
       </div>
     </div>
   </div>
