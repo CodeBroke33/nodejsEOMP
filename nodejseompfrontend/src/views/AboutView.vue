@@ -73,5 +73,3 @@ p {
 .about {
   margin-left: 10% !important;
 }
-
-</style>
