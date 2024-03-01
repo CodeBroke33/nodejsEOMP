@@ -242,7 +242,7 @@ export default createStore({
      async deleteProduct(context, payload) {
       try {
         const { msg } = await axios.delete(`${onlyWater}products/delete/${payload.id}`);
-        if (msg) {
+        // if (msg) {
           context.dispatch('fetchProducts');
           sweet({
             title: 'Delete Product',
@@ -250,7 +250,7 @@ export default createStore({
             icon: 'success',
             timer: 2000,
           });
-        }
+        // }
       } catch (error) {
         console.error(error);
         sweet({
