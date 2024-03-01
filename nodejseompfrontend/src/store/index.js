@@ -176,6 +176,7 @@ export default createStore({
       
 
     },
+    // Fetch Product
     async fetchProducts(context) {
       try{
         let {results} = 
@@ -192,6 +193,7 @@ export default createStore({
         }) 
       }
     },
+    // Fetch Products
     async fetchProduct(context, payload) {
       try{
         let {result} = (await axios.get(`${onlyWater}products/${payload.id}`)).data
@@ -214,6 +216,7 @@ export default createStore({
         }) 
       }
     },
+    // Add Product
     async addProduct(context, payload) {
       try {
         let { msg } = (await axios.post(`${onlyWater}products/addProduct`, payload));
@@ -258,6 +261,29 @@ export default createStore({
         });
       }
     },
+    // Update Product
+async updateProduct(context, payload) {
+  try {
+    let { msg } = await axios.patch(`${onlyWater}/products/update/${payload.id}`, payload);
+    if (msg) {
+      context.dispatch('fetchProducts');
+      sweet({
+        title: 'Update Product',
+        text: msg,
+        icon: "success",
+        timer: 2000
+      });
+    }
+  } catch (e) {
+    sweet({
+      title: 'Error',
+      text: 'An error occurred when updating a product.',
+      icon: "error",
+      timer: 2000
+    });
+  }
+},
+
   },
   modules: {
   }
