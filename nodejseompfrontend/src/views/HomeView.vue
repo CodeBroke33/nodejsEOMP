@@ -1,8 +1,8 @@
 <template>
   <div class="homepage bg-black bg-image">
-    <h1 class="home text-black margin-top">WELCOME<br>TO<br></h1>
+    <h1 class="home text-black margin-top wavy-text">WELCOME<br>TO<br></h1>
     <div class="img-wrapper">
-      <img class="img-fluid rounded-circle" type="image" src="https://i.ibb.co/0M1KHF7/2-removebg-preview.png" alt="logo">
+      <img class="img-fluid rounded-circle wavy-image" type="image" src="https://i.ibb.co/0M1KHF7/2-removebg-preview.png" alt="logo">
     </div>
   </div>
 </template>
@@ -43,6 +43,24 @@ h1 {
 
 .homepage {
   padding: 8%;
+}
+
+/* Add animation */
+.wavy-text {
+  animation: wave 2s infinite alternate;
+}
+
+.wavy-image {
+  animation: wave 2s infinite alternate-reverse;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50px); 
+  }
 }
 
 @media (max-width: 768px) {
