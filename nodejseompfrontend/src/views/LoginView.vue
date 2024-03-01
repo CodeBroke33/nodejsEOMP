@@ -1,7 +1,7 @@
 <template>
-    <div class="container">
+    <div class=" bg-black vh-100">
       <div class="row">
-        <h2 class="display">Login</h2>
+        <h2 class="display text-white">Login</h2>
         <form @submit.prevent="loginUser">
           <div class="form-group">
             <label for="username">Username:</label>
