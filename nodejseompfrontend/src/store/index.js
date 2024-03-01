@@ -35,7 +35,7 @@ export default createStore({
 
     async register(context, payload) {
       try{
-        let {msg} = (await axios.post(`${onlyWater}users/register`, payload)).data
+        let {msg} = (await axios.post(`${onlyWater}users/register/`, payload)).data
         if(msg) {
           context.dispatch('fetchUsers')
           sweet({
@@ -119,10 +119,10 @@ export default createStore({
       }
     },
     // Deleting user
-    async deleteUser(context, payload) {
+    async deleteUser(context, id) {
       try{
-        let {msg} = await axios.delete(`${onlyWater}users/${payload.id}`)
-        if(msg) {
+        let {msg} = await axios.delete(`${onlyWater}users/delete/${id}`)
+        // if(msg) {
           context.dispatch('fetchUsers')
           sweet({
             title: 'Delete user',
@@ -130,7 +130,7 @@ export default createStore({
             icon: "success",
             timer: 2000
           }) 
-        }
+        // }
       }catch(e) {
         sweet({
           title: 'Error',
@@ -197,7 +197,7 @@ export default createStore({
       try{
         let {result} = (await axios.get(`${onlyWater}products/${payload.id}`)).data
         if(result) {
-          context.commit('setProduct', result)
+          context.commit('setProduct', result[0])
         }else {
           sweet({
             title: 'Retrieving a single product',
