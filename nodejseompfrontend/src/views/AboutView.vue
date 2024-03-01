@@ -13,7 +13,7 @@
                             Razien Mackenzie is defined by his remarkable determination and ambition. His relentless pursuit of goals is fueled by unwavering dedication, pushing him forward with enthusiasm. Razien's infectious optimism uplifts those around him, instilling a resilient mindset that tackles challenges with boundless energy.<br><br>With a reputation for reliability and independence, Razien, as the Chief Information Officer (CIO) of the company, takes charge confidently, navigating through obstacles with ease. His leadership qualities extend beyond mere direction, as he leads by example, inspiring others to rise to their full potential. In any environment, Razien's presence is not only notable but also transformative, leaving a lasting impact on those he encounters.</p>
                     </div>
                     <div class="col">
-                        <img src="https://i.ibb.co/0ZB2CJ2/default-avatar-profile-icon-vector.jpg" class="flow w-20 h-25" alt="Profile">
+                        <img src="https://i.ibb.co/SNL7dy0/ba936c60-b382-4f91-a4a2-10e08c2cfc5e.jpg" class="flow w-20 h-25" alt="Profile">
                     </div>
                 </div>
                 <div class="row">
@@ -23,7 +23,7 @@
                             Carl Michael James epitomizes an exceptional individual, showcasing a blend of resolute qualities and versatile skills. He exudes determination and confidence, demonstrating autonomy and initiative in his endeavors. With unwavering reliability, Carl Michael consistently fulfills his responsibilities, making decisive contributions to problem-solving and progress.<br><br>His insightful perspectives and entrepreneurial mindset foster innovation and strategic thinking, while his role as CFO underscores his financial acumen and leadership prowess. Carl Michael's dynamic persona enriches every project, making collaboration with him both enriching and rewarding.</p>
                     </div>
                     <div class="col">
-                        <img src="https://i.ibb.co/0ZB2CJ2/default-avatar-profile-icon-vector.jpg" class="flow w-20 h-25"  alt="Profile">
+                        <img src="https://i.ibb.co/zb2g5wb/IMG-7803.jpg" class="flow w-20 h-25"  alt="Profile">
                     </div>
                 </div>
             </div>

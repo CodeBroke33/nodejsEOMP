@@ -1,24 +1,24 @@
 <template>
-  <div class="bg-black">
-      <div class="row">
-          <div class="col">
-              <input type="text" placeholder="Search product by name" class="form-control">
+  <div class="products bg-black">
+      <div class="row bg-black">
+          <div class="col my-3">
+              <input type="text" placeholder="Search product by name" class="form-control mx-1">
           </div>
           <div class="col">
-              <button class="btn btn-success">Sorting by price</button>
+              <button class="btn btn-info my-3">Sorting by price</button>
           </div>
       </div>
-      <div class="row" v-if="products">
+      <div class="row m-5 justify-content-center" v-if="products">
           <Card v-for="product in products" :key="product.prodID" class="bg-black">
               <template #cardHeader>
                   <img :src="product.prodUrl" alt="product-image" class="card-image bg-black" />
               </template>
               <template #cardBody>
-                  <div class="bg-white">
+                  <div class="bg-white rounded">
                       <h3 class="product-info text-black">{{ product.prodName }}</h3>
                   <p class="product-info text-black">Category: {{ product.Category }}</p>
                   <p class="product-info text-black">Amount: R {{ product.amount }}</p>
-                  <router-link :to="{ name: 'product', params: { id: product.prodID } }">View More</router-link>
+                  <router-link class="btn bg-black text-white my-1" :to="{ name: 'product', params: { id: product.prodID } }">View More</router-link>
 
                   </div>
                
@@ -79,4 +79,13 @@ button {
 #cardBody{
   background-color: white
 }
+
+.product-info {
+    font-family: Righteous;
+}
+
+.product {
+    overflow-x: hidden;
+}
+
 </style>

@@ -131,4 +131,8 @@ export default {
     border-radius: 1px;
     color: grey;
   }
+
+
+
+
 </style>
