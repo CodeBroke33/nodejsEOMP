@@ -1,10 +1,10 @@
 <template>
-    <div>  
-      <div>{{ addProductModel }}</div>
+    <div>
+      <div>{{ updateProductModel }}</div>
   
-      <form @submit.prevent="register">
+      <form @submit.prevent="updateProduct">
         <label for="prodID">Product ID:</label>
-        <input v-model="payload.prodID" type="text" id="prodID" />
+        <input v-model="payload.prodID" type="text" id="prodID" disabled />
   
         <label for="prodName">Product Name:</label>
         <input v-model="payload.prodName" type="text" id="prodName" />
@@ -15,20 +15,20 @@
         <label for="amount">Amount:</label>
         <input v-model="payload.amount" type="text" id="amount" />
   
-        <label for="category">Category:</label>
-        <input v-model="payload.Category" type="text" id="category" />
+        <label for="Category">Category:</label>
+        <input v-model="payload.Category" type="text" id="Category" />
   
         <label for="prodUrl">Product URL:</label>
         <input v-model="payload.prodUrl" type="text" id="prodUrl" />
   
-        <button type="submit">Register</button>
+        <button type="submit">Update</button>
       </form>
     </div>
   </template>
   
   <script>
   export default {
-    props: ['addProductModel'],
+    props: ['updateProductModel', 'product'],
     data() {
       return {
         payload: {
@@ -41,9 +41,16 @@
         }
       };
     },
+    mounted() {
+      this.updateFormData();
+    },
     methods: {
-      register() {
-        this.$store.dispatch('addProduct', this.payload);
+      updateFormData() {
+        this.payload = { ...this.product };
+      },
+      updateProduct() {
+        this.$store.dispatch('updateProduct', this.payload);
+        this.$emit('update', this.payload);
       }
     }
   };

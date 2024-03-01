@@ -1,6 +1,6 @@
 <template>
   <div>
-<!-- USERS TABLE fir users -->
+<!-- USERS TABLE -->
 <br><h2>Users Table</h2><br>
     <button class="btn btn-primary" @click="toggleAddUser">Add User</button>
     <addUser v-if="showAddUser"/>
