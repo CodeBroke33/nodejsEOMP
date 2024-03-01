@@ -132,7 +132,11 @@ export default {
     color: grey;
   }
 
+th {
+  font-family: Righteous;
+}
 
-
-
+td {
+  font-family: Righteous;
+}
 </style>
