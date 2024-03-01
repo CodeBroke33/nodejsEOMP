@@ -16,8 +16,9 @@
               <template #cardBody>
                   <div class="bg-white">
                       <h3 class="product-info text-black">{{ product.prodName }}</h3>
-                  <p class="product-info text-black">Category: {{ product.Category }}</p>
-                  <p class="product-info text-black">Amount: R {{ product.amount }}</p>
+                      <h2 class="product-title">{{ product.prodName }}</h2>
+            <p class="product-info">Category: {{ product.Category }}</p>
+            <p class="product-info">Amount: R {{ product.amount }}</p>
                   <router-link :to="{ name: 'product', params: { id: product.prodID } }">View More</router-link>
 
                   </div>
@@ -26,7 +27,7 @@
           </Card>
       </div>
       <div class="row" v-else>
-          <p class="lead">Loading</p>
+          <p class="lead">Loading  </p>
       </div>
   </div>
 </template>
@@ -78,5 +79,10 @@ button {
 
 #cardBody{
   background-color: white
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 </style>
