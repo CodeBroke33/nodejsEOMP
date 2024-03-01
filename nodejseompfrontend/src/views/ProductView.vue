@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="bg-black">
     <div class="row">
-      <h1 class="display-2">Product Details</h1>
+      <h1 class="display-2 text-white">Product Details</h1>
     </div>
     <div class="row">
       <div class="col-md-6">
@@ -23,8 +23,10 @@
         </Card>
 
         <div class="mt-3">
-          <button class="btn btn-primary mr-2">Go Back</button>
-          <button class="btn btn-secondary">Purchase</button>
+          <router-link to="/products">
+            <button class="btn btn-primary">Go Back</button>
+            </router-link>
+          <button class="btn btn-success">Purchase</button>
         </div>
       </div>
     </div>
